@@ -1,4 +1,9 @@
-def clean(token):
+class feature_extractor(object):
+    def __init__(self,url):
+        self.url=url
+        self.domain=url.split('//')[-1].split('/')[0]
+
+def clean(input):
     tokensBySlash = str(input.encode('utf-8')).split('/')
     allTokens=[]
     for i in tokensBySlash:
