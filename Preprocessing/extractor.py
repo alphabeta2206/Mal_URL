@@ -22,7 +22,7 @@ class feature_extractor(object):
             return 4
         else:
             return 0
-    def extension(self):
+    #def extension(self):
 
     def num_digits(self):
         return sum(n.isdigit() for n in self.url)
