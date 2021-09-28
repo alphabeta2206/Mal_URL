@@ -1,4 +1,13 @@
 import re
+import tensorflow as tf
+from keras.preprocessing.text import text_to_word_sequence
+from tensorflow.keras.preprocessing.text import Tokenizer
+
+tokens=text_to_word_sequence("manta.com/c/mmcdqky/lily-co")
+
+print(tokens)
+
+
 #to map the features to a dictioanary and then convert it to a csv file.
 # Feauture extraction 
 class feature_extractor(object):
