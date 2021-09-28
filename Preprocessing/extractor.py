@@ -1,4 +1,5 @@
-#Current plan is to map the features to a dictioanary and then convert it to a csv file.
+import re
+#to map the features to a dictioanary and then convert it to a csv file.
 # Feauture extraction 
 class feature_extractor(object):
     def __init__(self,url):
@@ -6,7 +7,23 @@ class feature_extractor(object):
         self.length=len(url)
         #self.domain=url.split('//')[-1].split('/')[0]
     #def entropy(self):
-    
+    #.com,.org,.net,.edu
+    #has www.
+    #.extension-- .htm,.html,.php,.js
+    # Pattern regex = Pattern.compile(".com[,/.]")
+    def domain(self):
+        if re.search(".com[ .,/]",self.url):
+            return 1
+        elif re.search(".org[.,/]",self.url):
+            return 2
+        elif re.search(".net[.,/]",self.url):
+            return 3
+        elif re.search(".edu[.,/]",self.url):
+            return 4
+        else:
+            return 0
+    def extension(self):
+
     def num_digits(self):
         return sum(n.isdigit() for n in self.url)
     
