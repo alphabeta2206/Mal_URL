@@ -5,4 +5,4 @@
 
 ## Malicious URL (FE)
 ### Results 
-![RESULTS]()
+![RESULTS](https://github.com/alphabeta2206/Mal_URL/blob/main/Tabulated%20Result.png)
