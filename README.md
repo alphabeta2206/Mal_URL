@@ -2,8 +2,7 @@
 
 
 ## Dataset Distribution
-> 1 - Malicious
-> 0 - Benign
+> 0 - Benign 1 - Malicious
 ![RESULTS](https://github.com/alphabeta2206/Mal_URL/blob/main/output.png)
 
 ## Malicious URL 
