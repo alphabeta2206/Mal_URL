@@ -1,7 +1,10 @@
 # Malicious URL and Cross - Site Script Detection 
 
 
-## Dataset 
+## Dataset Distribution
+> 1 - Malicious
+> 0 - Benign
+![RESULTS](https://github.com/alphabeta2206/Mal_URL/blob/main/output.png)
 
 ## Malicious URL 
 > Extracted Features
